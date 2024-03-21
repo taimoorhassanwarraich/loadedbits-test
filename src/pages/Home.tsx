@@ -9,7 +9,7 @@ import pic2 from '../assets/2.png'
 export const Home = () => {
   return (
     <div
-      className="relative px-8"
+      className="relative px-8 w-full"
       style={{
         backgroundImage: `url(${backgrnd})`,
         backgroundSize: "contain",

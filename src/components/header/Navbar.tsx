@@ -7,6 +7,7 @@ import searchIcon from "../../assets/searchIcon.svg";
 import { keyIcon } from "../../assets/svgIcons";
 import { Cart, Facebook, Github, Logout, Nord, Twitter } from "../svg";
 import { DropdownButton } from "../menu/NavDropDownMenu";
+import { BrandsMenu } from "./BrandsMenu";
 
 export const Navbar: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState("");
@@ -21,7 +22,7 @@ export const Navbar: React.FC = () => {
 
   const dropdownItems = {
     template: <TemplateMenu />,
-    resources: <SupportMenu />,
+    resources: <BrandsMenu />,
   };
 
   return (
@@ -107,6 +108,13 @@ export const Navbar: React.FC = () => {
             <Cart />
             <span className="w-[20px] h-[20px] flex justify-center items-center rounded-full bg-blue absolute -top-[12px] -right-3 text-white text-xs">
               2
+            </span>
+          </div>
+          <div className="w-5 relative block sm:hidden">
+            <span className="du-block absolute right-0 h-full w-full">
+              <span className="relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-black "></span>
+              <span className="relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-black  w-full"></span>
+              <span className="relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-black ease-in-out w-full "></span>
             </span>
           </div>
         </div>

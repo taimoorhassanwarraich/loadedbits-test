@@ -20,7 +20,7 @@ const Icons = [
 
 export const Footer = () => {
   return (
-    <div className="bg-black relative pb-4 overflow-hidden">
+    <div className="bg-black w-full relative pb-4 overflow-hidden">
       <div className="absolute left-0 sm:top-0 z-1 opacity-50 3xl:right-[19%]">
         <F1 />
       </div>
