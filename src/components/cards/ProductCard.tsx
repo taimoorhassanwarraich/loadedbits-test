@@ -11,7 +11,7 @@ export const ProductCard = ({data}:any) => {
           <div className="mt-3">
             <ImageBox image={react} />
           </div>
-          <p className="text-black mt-4 mb-4 font-[500] text-[24px] leading[35px]">
+          <p className="text-black mt-4 mb-4 font-[500] cursor-pointer hover:text-blue text-[24px] leading[35px]">
             {data.title}
           </p>
           <p className="text-lightBlack text-base ">

@@ -62,7 +62,7 @@ const ProductsWidget = () => {
                     <p className="text-base font-[500] text-lightBlack">
                       {item.name}
                     </p>
-                    <p className="p-2 border-gray border-[1px] rounded-md">
+                    <p className="w-8 h-8 flex justify-center items-center border-gray border-[1px] rounded-lg">
                       {item.count}
                     </p>
                   </div>
