@@ -4,8 +4,8 @@ import react from "../../assets/react.svg";
 export const ProductCard = () => {
     return (
       <div className="sm:col-span-6  col-span-12 rounded-md customshadow border-[2px] bg-white pb-4 border-[#e6e7eb]">
-        <div className="">
-          <img src={resume} alt="" />
+        <div className="w-fill">
+          <img src={resume} className="w-full" alt="" />
         </div>
         <div className="px-4">
           <div className="mt-3">

@@ -64,11 +64,12 @@ const ProductsWidget = () => {
         </div>
       </div>
       <div className="col-span-8">
-        <div className="grid grid-cols-12 gap-12">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-        </div>
+      <div className="grid grid-cols-12 gap-2 sm:gap-12">
+  <ProductCard />
+  <ProductCard />
+  <ProductCard />
+</div>
+
       </div>
     </div>
   );
