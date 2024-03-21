@@ -76,7 +76,7 @@ export const Footer = () => {
 
 const FooterLinksContainer = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 mt-16">
+    <div className="grid grid-cols-1 bg-black sm:grid-cols-2 lg:grid-cols-12 gap-3 mt-16">
       <div className="col-span-full sm:col-span-1 lg:col-span-4 pr-4">
         <img src={logo} alt="" />
         <p className="mt-4 sm:mt-6 lg:mt-4 text-white/50">
