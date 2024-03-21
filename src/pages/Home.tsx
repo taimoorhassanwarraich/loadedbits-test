@@ -9,7 +9,7 @@ import pic2 from '../assets/2.png'
 export const Home = () => {
   return (
     <div
-      className="relative px-8 w-full"
+      className="relative px-8 w-full pb-24"
       style={{
         backgroundImage: `url(${backgrnd})`,
         backgroundSize: "contain",
@@ -45,7 +45,7 @@ export const Home = () => {
 
 const ProductsWidget = () => {
   return (
-    <div className=" grid grid-cols-12 gap-16 mb-20  ">
+    <div className=" grid grid-cols-12 gap-16   ">
       <div className="col-span-4 hidden sm:block border-[1px] bg-white border-[#e6e7eb] overflow-y-auto customshadow rounded-md shadow-sm h-[650px]  sticky top-20">
         <div className="h-[700px] px-8 pt-6">
           <p className="text-[28px] leading-[40px] font-bold">
