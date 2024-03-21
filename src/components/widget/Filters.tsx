@@ -11,7 +11,7 @@ import { DropdownMenu } from "../menu/DropDownMenu";
 
 export const Filters = () => {
   return (
-    <div className="bg-white sticky top-0 z-10 grid grid-cols-12 px-4 py-3 rounded-lg my-8">
+    <div className="bg-white  grid grid-cols-12 px-4 py-3 rounded-lg my-8">
       <div className="col-span-12 sm:col-span-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <DropdownMenu />
         <SearchInput
