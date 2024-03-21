@@ -1,20 +1,13 @@
 import { useState } from "react";
 import logo from "../../assets/logo.svg";
 import { TemplateMenu } from "./TemplateMenu";
-import { BrandsMenu } from "./BrandsMenu";
 import { SupportMenu } from "./SupportMenu";
 import IconButton from "../buttons/IconButton";
 import searchIcon from "../../assets/searchIcon.svg";
 import { keyIcon } from "../../assets/svgIcons";
-import {
-  Cart,
-  Facebook,
-  Github,
-  Logout,
-  Nord,
-  Twitter,
-} from "../svg";
+import { Cart, Facebook, Github, Logout, Nord, Twitter } from "../svg";
 import { DropdownButton } from "../menu/NavDropDownMenu";
+
 export const Navbar: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState("");
 
@@ -28,19 +21,18 @@ export const Navbar: React.FC = () => {
 
   const dropdownItems = {
     template: <TemplateMenu />,
-    brands: <BrandsMenu />,
-    supports: <SupportMenu />,
+    resources: <SupportMenu />,
   };
 
   return (
-    <div className="grid grid-cols-12 py-3   bg-white sticky top-0 z-10 ">
-      <div className="col-span-2 flex justify-center">
+    <div className="grid grid-cols-12 py-4 bg-white sticky top-0 z-10">
+      <div className="col-span-3  sm:col-span-2 flex justify-center">
         <div>
           <img src={logo} alt="Logo" />
         </div>
       </div>
 
-      <div className="col-span-4 hidden sm:flex">
+      <div className="col-span-4 hidden justify-center sm:flex">
         <div className="flex items-center justify-center gap-4">
           <DropdownButton
             label="Template"
@@ -50,10 +42,10 @@ export const Navbar: React.FC = () => {
             onMouseLeave={handleDropdownLeave}
           />
           <DropdownButton
-            label="Brands"
-            dropdownComponent={dropdownItems.brands}
+            label="Resources"
+            dropdownComponent={dropdownItems.resources}
             activeDropdown={activeDropdown}
-            onMouseEnter={() => handleDropdownEnter("brands")}
+            onMouseEnter={() => handleDropdownEnter("resources")}
             onMouseLeave={handleDropdownLeave}
           />
           <div className="text-base text-lightBlack font-[500] flex items-center gap-2 mr-4">
@@ -66,16 +58,16 @@ export const Navbar: React.FC = () => {
 
       <div className="col-span-6 flex items-center gap-6">
         <div className="hidden sm:block">
-          <div className="flex  items-center  shadow-sm relative   px-2 w-[200px] rounded-md border-[2px] border-gray">
+          <div className="flex items-center shadow-sm relative px-2 w-[200px] rounded-md border-[2px] border-gray">
             <img src={searchIcon} alt="" />
             <input
               placeholder="Search here..."
-              className="  py-2.5 pl-2  font-medium outline-none duration-200 ease-out placeholder:text-dark-5 focus:border-transparent focus:bg-input focus:shadow-input-2 "
+              className="py-2.5 pl-2 font-medium outline-none duration-200 ease-out placeholder:text-dark-5 focus:border-transparent focus:bg-input focus:shadow-input-2"
               type="text"
               value=""
             />
 
-            <span className=" absolute right-3.5 top-1/2 -translate-y-1/2 text-[#B5B5B5]">
+            <span className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[#B5B5B5]">
               ⌘K
             </span>
           </div>
@@ -117,10 +109,8 @@ export const Navbar: React.FC = () => {
               2
             </span>
           </div>
-
         </div>
       </div>
     </div>
   );
 };
-
