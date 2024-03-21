@@ -56,7 +56,7 @@ export const Footer = () => {
           </div>
         </div>
         <FooterLinksContainer />
-        <div className="mt-12 border-b-[1px] border-darkgray pb-8">
+        <div className="mt-16 border-b-[1px] border-darkgray pb-8">
           <p className="mb-4 text-center font-medium text-white/50">
             Check out our other products
           </p>
