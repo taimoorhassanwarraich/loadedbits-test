@@ -1,0 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+.customshadow{
+  box-shadow:0px 3px 4px rgba(35, 35, 35, 0.07)
+}
+.border-stroke {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 239 245 / var(--tw-border-opacity));
+}
